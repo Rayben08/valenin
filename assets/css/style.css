@@ -1,0 +1,397 @@
+        body {
+            font-family: Arial, sans-serif;
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000; /* Ensures navbar stays above all elements */
+            background-color: #23C363 !important;
+            border-bottom: 3px solid #23C363; /* Keeps bottom border */
+            box-shadow: 0 4px 4px 0 rgba(0,0,0,.2);
+        }
+
+        .navbar .nav-link {
+            color: white !important;
+            font-weight: bold !important;
+        }
+
+        .navbar .nav-link:hover {
+            color: gray !important;
+        }
+
+        .navbar-toggler {
+            border-color: #0d7c5f !important;
+        }
+
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(76, 124, 89, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+        }
+
+        .heroh {
+            text-shadow: 2px 2px 5px black;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 50px;
+            margin-top: 80px; /* Adjust based on your navbar height */
+        }
+
+        .heroh-text {
+            max-width: 50%;
+        }
+        .heroh img {
+            max-width: 45%;
+        }
+
+        .hero {
+            background-image: linear-gradient(white, #dddddd);
+            color: #35734e;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 50px;
+            margin-top: 80px; /* Adjust based on your navbar height */
+        }
+
+        .hero-text {
+            max-width: 50%;
+        }
+        .hero img {
+            max-width: 45%;
+        }
+
+       .heroa {
+            position: relative;
+            color: #134830; /* Dark green for readability */
+            display: flex;
+            align-items: center;
+            justify-content: flex-end; /* Moves text to the right */
+            padding: 80px;
+            min-height: 350px; /* Adjust height as needed */
+        }
+
+        .heroa-text {
+            max-width: 50%;
+            z-index: 2; /* Ensures text is above gradient */
+            color: #134830;
+        }
+
+        /* Gradient overlay effect */
+        .heroa::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%; /* Covers almost half of the image */
+            height: 100%;
+            background: linear-gradient(to left, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
+            z-index: 1;
+        }
+
+        .heroa .container {
+            position: relative;
+            z-index: 2;
+            text-align: left;
+        }
+
+
+
+        .hero1 {
+            color: white;
+            text-shadow: 2px 2px 5px black;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 50px;
+        }
+        .hero1-text {
+            max-width: 50%;
+        }
+        .hero1 img {
+            max-width: 45%;
+        }
+
+        .hero .btn {
+            background-image: linear-gradient(to right, #73ab59, #23c363, #7cd4ac);
+            border: 2px solid #23c363; /* Use a solid color for the border */
+            color: white; /* Change text color */
+        }
+
+        .hero .btn:hover {
+            background-image: linear-gradient(to right, #5a8f44, #1fa653, #60b593);
+            border-color: #1fa653; /* Darker green shade on hover */
+            color: white;
+        }
+
+        .heroh .btn {
+            background-image: linear-gradient(to right, #73ab59, #23c363, #7cd4ac);
+            border: 2px solid #23c363; /* Use a solid color for the border */
+            color: white; /* Change text color */
+        }
+
+        .heroh .btn:hover {
+            background-image: linear-gradient(to right, #5a8f44, #1fa653, #60b593);
+            border-color: #1fa653; /* Darker green shade on hover */
+            color: white;
+        }
+
+        .career-box .btn {
+            background-image: linear-gradient(to right, #73ab59, #23c363, #7cd4ac);
+            border: 2px solid #23c363; /* Use a solid color for the border */
+            color: white; /* Change text color */
+        }
+
+        .career-box .btn:hover {
+            background-image: linear-gradient(to right, #5a8f44, #1fa653, #60b593);
+            border-color: #1fa653; /* Darker green shade on hover */
+            color: white;
+        }
+
+        .footer {
+            background-color: white !important; /* Green footer */
+            color: #23C363 !important; /* White text */
+            padding: 10px;
+            text-align: center;
+            width: 100%; /* Ensures full width */
+            position: relative; /* Keeps footer at bottom */
+            bottom: 0;
+            left: 0;
+        }
+
+        .footer a img {
+            /* filter: invert(1);  Makes social icons white */
+        }
+
+        .grad1 {
+            background-image: linear-gradient(white, #dddddd);
+            color: #35734e;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 50px;
+        }
+        .grad1 .container {
+             width: 50%; /* Reduce width to shift content further right */
+             text-align: left; /* Ensures text remains left-aligned */
+        }
+
+        .grad2 {
+            background-image: linear-gradient(#dddddd, white);/*#00e6ac*/
+            color: #35734e;
+            display: flex;
+            align-items: center; /* Centers vertically */
+            justify-content: flex-end; /* Moves content to the right */
+            padding: 50px;
+            min-height: 300px; /* Adjust height as needed */
+        }
+
+        .grad2 .container {
+            width: 40%; /* Reduce width to shift content further right */
+            text-align: left; /* Ensures text remains left-aligned */
+        }
+
+        .team-container {
+            display: flex;
+            gap: 20px; /* More space between boxes */
+            overflow-x: auto;
+            padding: 10px 0;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+        }
+
+        /* Hide scrollbar for WebKit browsers (Chrome, Safari) */
+        .team-container::-webkit-scrollbar {
+            display: none;
+        }
+
+        .team-box {
+            min-width: 50px;
+            background-color: #e0e0e0;
+            border-radius: 10px;
+            text-align: center;
+            padding: 20px;
+            flex-shrink: 0;
+        }
+
+        .team-img {
+            width: auto;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .career-img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .service-container {
+            display: flex;
+            gap: 25px; /* Spacing between boxes */
+            overflow-x: auto; /* Enable horizontal scrolling */
+            white-space: nowrap; /* Prevent wrapping */
+            padding: 10px 0;
+            scrollbar-width: none; /* Hide scrollbar for Firefox */
+            -ms-overflow-style: none; /* Hide scrollbar for IE/Edge */
+            margin-top: 20px; /* Added some space above */
+        }
+
+        /* Hide scrollbar for Webkit browsers (Chrome, Safari) */
+        .service-container::-webkit-scrollbar {
+            display: none;
+        }
+
+        /* Service Box */
+        .service-box {
+            min-width: 300px; /* Set minimum width for each box */
+            background-color: #73ab95; /* Light green background */
+            border-radius: 10px;
+            text-align: center;
+            position: relative;
+            padding: 20px;
+            flex: 0 0 auto; /* Prevents shrinking */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effects */
+        }
+
+        /* Hover Effect for Service Boxes */
+        .service-box:hover {
+            transform: translateY(-10px); /* Slight elevation on hover */
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Enhanced shadow */
+        }
+
+        /* Service Image */
+        .service-img {
+            width: auto;
+            height: 150px;
+            border-radius: 10px; /* Rounded corners for the image */
+            margin-bottom: 20px; /* Space between the image and text */
+        }
+
+        /* Service Title */
+        .service-box h4 {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #fff;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        /* Learn More Button */
+        .service-box .btn-success {
+            background-color: #28a745;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        /* Hover Effect for Learn More Button */
+        .service-box .btn-success:hover {
+            background-color: #218838;
+        }
+
+
+        .map-container {
+            width: 80%;
+            margin: 20px auto;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .hero-contact {
+            text-align: center;
+            background: #2E6B42;
+            color: white;
+            padding: 40px 20px;
+        }
+
+        .map-container {
+            margin-bottom: 20px;
+        }
+        .mapouter {
+            position:relative;
+            text-align:right;
+            width:100%;
+            height:400px;
+        }
+        .gmap_canvas {
+            overflow:hidden;
+            background:none!important;
+            width:100%;
+            height:400px;
+        }
+        .gmap_iframe {
+            height:400px!important;
+        }
+
+        /* Flexbox layout for contact details and inquiry form */
+        .contact-container {
+            display: flex;
+            flex-wrap: wrap; /* Allows items to wrap when screen size decreases */
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 20px;
+        }
+
+        /* Contact details and inquiry box each take 48% width */
+        .contact-left, .contact-right {
+            width: 48%;
+        }
+
+        /* Make inquiry box go below contact details on smaller screens */
+        @media screen and (max-width: 768px) {
+            .contact-container {
+                flex-direction: column; /* Stack elements vertically */
+                align-items: center;
+            }
+
+            .contact-left, .contact-right {
+                width: 100%;
+                text-align: center;
+            }
+        }
+
+        /* Form styling */
+        .contact-right form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .contact-right label {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        .contact-right input, 
+        .contact-right textarea {
+            width: 100%;
+            max-width: 400px; /* Limits field width */
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contact-right button {
+            margin-top: 15px;
+            padding: 10px 20px;
+            background: #B6DAB6; 
+            color: black;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .contact-right button:hover {
+            background: #A7D3AA; /* Slightly darker on hover */
+        }
+
+
